@@ -39,7 +39,8 @@ public class ConsumerExample {
             });
         }
 
-        Thread.sleep(10000);
+        Thread.sleep(2000);
+        executorService.shutdown();
         consumer.shutdown();
 
     }
